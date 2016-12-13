@@ -12,7 +12,7 @@ import javax.swing.*;
  *
  * @author Estudiante
  */
-public class Lab extends JFrame{
+public class Lab2 extends JFrame{
     
     JTextField username = new JTextField(15);
     JTextField telefono = new JTextField(15);
@@ -24,7 +24,7 @@ public class Lab extends JFrame{
     
     
     
-    public Lab(){
+    public Lab2(){
         super("Account Information");
         setSize(300, 220);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -32,37 +32,29 @@ public class Lab extends JFrame{
         
         
         
-   /*   add(usernameLabel);
-        add(username);
-        add(telefonoLabel);
-        add(telefono);
-        add(commentsLabel);
-        add(comments);
-        add(aceptar);
-        add(limpiar);
-        add(formatLabel);
-        add(formatBox);  
-        
-        setVisible(true);*/
+   
         
         GridLayout lm = new GridLayout(6, 2);
        // setLayout(lm);
         JPanel pane = new JPanel();
         pane.setLayout(lm);
-        JLabel usernameLabel = new JLabel("Username: ");
+        JLabel usernameLabel = new JLabel("Name: ");
         JLabel telefonoLabel = new JLabel("Phone: ");
-        JLabel commentsLabel = new JLabel("Info: ");
+        JLabel commentsLabel = new JLabel("Result: ");
         JLabel formatLabel = new JLabel("Gender: ");
         
           //set the name to components
-        usernameLabel.setName("lblUsername");
-        telefonoLabel.setName("lbltelephone");
-        commentsLabel.setName("lblComments");
+        usernameLabel.setName("lblName");
+        telefonoLabel.setName("lblPhone");
+        commentsLabel.setName("lblResult");
+        formatLabel.setName("lblGender");
         username.setName("username");
         telefono.setName("password");
         comments.setName("comments");
         aceptar.setName("ok");
         limpiar.setName("clean");
+        
+        
        
         comments.setLineWrap(true);
         comments.setWrapStyleWord(true);
@@ -92,8 +84,8 @@ public class Lab extends JFrame{
         }
     }
     public static void main(String[] arguments) {
-        Lab.setLookAndFeel();
-        Lab lb = new Lab();
+        Lab2.setLookAndFeel();
+        Lab2 lb = new Lab2();
       
     }
     
