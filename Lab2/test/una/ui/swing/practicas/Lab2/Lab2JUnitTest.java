@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author Estudiante
+ * @author Alejandro
  */
 /*
  * To change this license header, choose License Headers in Project Properties.
